@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Smoothie Machine</title>
+</head>
+<style>
+    /* Add styles to position smoothie details and image in one column */
+    #smoothieDetails {
+        display: flex;
+        flex-direction: column; /* Display items vertically */
+        align-items: center;
+    }
+
+    #smoothieDetails div {
+        margin-bottom: 20px; /* Adjust margin as needed */
+    }
+
+    #smoothieDetails img {
+        max-width: 100%; /* Make sure the image doesn't exceed the container width */
+        height: auto;
+    }
+</style>
+<body>
+    <form id="smoothieForm">
+        <h1>Make an order for a Smoothie</h1>
+        <div>
+            <label for="fruit">Select a fruit:</label>
+            <select id="fruit" name="fruit">
+                <option value="strawberry">Strawberry</option>
+                <option value="banana">Banana</option>
+                <option value="vanilla">Vanilla</option>
+                <option value="orange">Orange</option>
+                <option value="pineapple">Pineapple</option>
+            </select>
+        </div> <br>
+
+        <div class="form-group">
+            <label for="base">Select a base:</label>
+            <select id="base" name="base">
+                <option value="yogurt">Yogurt</option>
+                <option value="milk">Milk</option>
+            </select>
+        </div> <br>
+
+        <div class="form-group">
+            <label for="toppings">Select toppings:</label>
+            <input type="checkbox" id="chocolateChips" name="topping" value="chocolateChips">
+            <label for="chocolateChips">Chocolate Chips</label>
+            <input type="checkbox" id="granola" name="topping" value="granola">
+            <label for="granola">Granola</label>
+        </div> <br>
+
+        <div class="form-group">
+            <label for="size">Select size:</label>
+            <input type="radio" id="small" name="size" value="small">
+            <label for="small">Small</label>
+            <input type="radio" id="medium" name="size" value="medium">
+            <label for="medium">Medium</label>
+            <input type="radio" id="large" name="size" value="large">
+            <label for="large">Large</label>
+        </div> <br>
+
+        <div>
+            <label for="sweetener">Select sweetener:</label>
+            <input type="radio" id="honey" name="sweetener" value="honey">
+            <label for="honey">Honey</label>
+            <input type="radio" id="agave" name="sweetener" value="agave">
+            <label for="agave">Agave</label>
+        </div> <br>
+
+        <div>
+            <label for="extra">Any extra requests:</label>
+            <textarea id="extra" name="extra" rows="4" cols="50"></textarea>
+        </div> <br>
+
+        <button type="button" onclick="orderSmoothie()">Order</button>
+    </form>
+    
+    <div id="smoothieOutput" class="rows">
+        
+    </div>    
+        <!-- Smoothie Details -->
+        <div id="smoothieDetails">
+            <!-- Add smoothie description here -->
+            <div>
+                <img id="smoothiePresentationImage" src="" alt="Smoothie Image">
+            </div>
+        </div>
+       <!-- Smoothie Bill -->
+       <!-- <div id="smoothieBill">
+        <h2>Your Smoothie Bill</h2>
+        <ul id="billDetails"></ul>
+        <p id="totalPrice">Total Price: $0.00</p>
+    </div> -->
+        <!-- Fun Message -->
+        <div id="funMessage">
+            <p>🎉 Enjoy your delicious and healthy smoothie! 🎉</p>
+        </div>
+    
+    
+    </div>
+    
+   
+
+    <script src="script.js"></script>
+</body>
+</html>

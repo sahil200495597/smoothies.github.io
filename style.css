@@ -1,0 +1,165 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Adjust the width as needed */
+    max-width: 600px; /* Set a maximum width if desired */
+}
+
+/* label {
+    display: block;
+    margin-bottom: 4px;
+
+} */
+
+select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 6px;
+    box-sizing: border-box;
+}
+
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+#smoothieOutput {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#smoothieOutput {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+#smoothieOutput::before {
+    content: "Your Smoothie Order Details";
+    display: block;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#smoothieDetails {
+    list-style-type: none;
+    padding: 0;
+}
+
+#smoothieDetails li {
+    margin-bottom: 8px;
+}
+h1{
+    color: crimson;
+}
+
+/* style.css */
+
+/* Add this style for the image container */
+#smoothieImageContainer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Add this style for the image */
+#smoothieImage {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 8px; 
+}
+
+/* Add this to your CSS */
+#funMessage {
+    text-align: center;
+    padding: 10px;
+    background-color: #4caf50; /* Green background color */
+    color: white;
+    font-size: 1.2em;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#smoothieOutput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#smoothieBill, #smoothiePresentation {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#billDetails {
+    list-style-type: none;
+    padding: 0;
+}
+
+#billDetails li {
+    margin-bottom: 5px;
+}
+
+#totalPrice {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#smoothiePresentationImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Add this CSS to your existing style.css file or in a <style> tag in the head */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#smoothieOutput {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Add any additional styling as needed */
+#smoothieDetails,
+#smoothieBill,
+#smoothiePresentation,
+#funMessage {
+    margin: 10px; /* Adjust margin as needed for spacing */
+}
+
